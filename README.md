@@ -3,6 +3,8 @@
 A single-page personal portfolio built from both resumes and the cover letter.
 Pure HTML + CSS + JavaScript. No build step, no dependencies.
 
+Live site: https://portfolio2-phi-five-37.vercel.app/#gaming
+
 ## Files
 - `index.html` — page structure and all content
 - `styles.css` — dark theme + gaming "HUD" styling
