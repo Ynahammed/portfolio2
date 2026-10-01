@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yadiki Naveed Ahammed — Software Engineer &amp; AI Developer</title>
+<meta name="description" content="Portfolio of Yadiki Naveed Ahammed — Software Engineer, AI/ML & Salesforce developer, and lifelong gamer." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">
+      <span class="nav__brand-mark">YN</span>
+      <span class="nav__brand-text">Naveed<em>Ahammed</em></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#gaming" class="nav__gaming">Gaming</a>
+      <a href="#qa" class="nav__gaming">QA Letter</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__grid"></div>
+  <div class="hero__glow"></div>
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="hero__eyebrow" data-reveal>
+        <span class="dot"></span> Available for software engineering roles
+      </p>
+      <h1 class="hero__title" data-reveal>
+        Yadiki Naveed<br /><span class="grad">Ahammed</span>
+      </h1>
+      <p class="hero__roles" data-reveal>
+        <span id="typewriter" class="typewriter"></span><span class="caret">|</span>
+      </p>
+      <p class="hero__lead" data-reveal>
+        Computer Science undergrad who ships end-to-end systems — from GPU-aware PyTorch
+        inference pipelines and RAG-grounded LLM guardrails to role-based Salesforce security
+        models. I care about the details that only surface when you inspect actual output
+        correctness, not just whether the app runs.
+      </p>
+      <div class="hero__actions" data-reveal>
+        <a href="#projects" class="btn btn--primary">View my work</a>
+        <a href="#gaming" class="btn btn--ghost">Gaming profile 🎮</a>
+      </div>
+      <ul class="hero__contact" data-reveal>
+        <li><a href="mailto:naveed12092005@gmail.com">✉ naveed12092005@gmail.com</a></li>
+        <li><a href="tel:+918074389232">☎ +91-80743-89232</a></li>
+        <li><span>📍 Kadapa, Andhra Pradesh, India</span></li>
+        <li><a href="https://github.com/Ynahammed" data-link="github" target="_blank" rel="noopener noreferrer">⌥ github.com/Ynahammed</a></li>
+      </ul>
+    </div>
+
+    <aside class="hero__card" data-reveal>
+      <div class="playercard">
+        <div class="playercard__top">
+          <span class="playercard__tag">PLAYER CARD</span>
+          <span class="playercard__lvl">LVL&nbsp;21</span>
+        </div>
+        <div class="playercard__avatar">YN</div>
+        <h3 class="playercard__name">Naveed_Lmaoooo</h3>
+        <p class="playercard__sub">PSN ID &middot; PSN Library 451</p>
+        <div class="playercard__stats">
+          <div><strong data-count="15" data-suffix="+">0</strong><span>Years gaming</span></div>
+          <div><strong data-count="451">0</strong><span>Games owned</span></div>
+          <div><strong data-count="4" data-suffix="">0</strong><span>Shipped projects</span></div>
+        </div>
+        <div class="playercard__bars">
+          <div class="bar"><label>AI / ML Engineering</label><i style="--v:92%"></i></div>
+          <div class="bar"><label>Backend / APIs</label><i style="--v:85%"></i></div>
+          <div class="bar"><label>Salesforce / CRM</label><i style="--v:80%"></i></div>
+          <div class="bar"><label>Frontend</label><i style="--v:74%"></i></div>
+          <div class="bar"><label>Game QA &amp; Critical Analysis</label><i style="--v:99%"></i></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="kicker" data-reveal>01 — About</p>
+    <h2 class="section__title" data-reveal>Engineer first. Gamer always.</h2>
+    <div class="about">
+      <div class="about__text" data-reveal>
+        <p>
+          I'm a final-stretch <strong>B.Tech Computer Science</strong> student at SRM University AP
+          (CGPA 8.32/10), and an engineer who learns by building the whole thing — data pipeline,
+          model, API, interface, and the tests that prove it works. My cover letter says I'm excited
+          about <em>"user-friendly and scalable software that empowers businesses to thrive in a
+          digital age"</em> — and that's genuinely the kind of work I chase.
+        </p>
+        <p>
+          I've delivered five PyTorch transformer models inside one inference pipeline, built a
+          governed LLM evaluation layer that audits every generated response, hardened a CRM with
+          role-based security across 10+ custom objects, and written 500+ lines of Apex on the way
+          to 85%+ test coverage. Along the way I've developed a habit I think matters more than any
+          framework: <strong>hunting the defects that don't crash the app but quietly make the
+          output wrong</strong> — a scaler refit on single-sample inputs, a hardcoded secret
+          breaking password hashing, an untested codebase. I find them, reproduce them, and leave
+          regression tests behind.
+        </p>
+        <p>
+          Outside the terminal I've been playing video games continuously since 2010 across 15+
+          years and shifting console generations, and I write structured, non-biased criticism about
+          them. It's the same skill in a different medium: understanding systems, articulating
+          tradeoffs, and refusing to hand out praise that isn't earned.
+        </p>
+
+        <aside class="cover-note">
+          <p class="cover-note__label">⟶ From my cover letter</p>
+          <blockquote class="cover-note__quote">
+            “That range matters for QA work: it means I judge a game against the standards of its
+            own genre rather than a single fixed yardstick — the same discipline testers need when
+            deciding whether a mechanic is working as intended or actually broken.”
+          </blockquote>
+          <p class="cover-note__lead">
+            I'm applying for <strong>Game Tester</strong> with Rockstar India's QA team. What I bring:
+          </p>
+          <ul class="cover-note__list">
+            <li><strong>700+ games</strong> across nearly every major genre — action, open-world, RPG, shooter, survival horror, stealth, racing, strategy, simulation</li>
+            <li><strong>100+ hours in GTA V</strong> and <strong>70+ hours in Red Dead Redemption II</strong>, with a full side-by-side category breakdown of both</li>
+            <li>Critical, category-by-category evaluation rather than uniform praise — judging design intent versus actual friction</li>
+            <li>Spotting when atmosphere, pacing, or presentation breaks a game's deliberately controlled experience</li>
+            <li>The same discipline in software: hunting defects that don't crash the app but quietly make the output wrong</li>
+          </ul>
+          <p class="cover-note__link">
+            <a href="#qa">Read the full cover letter →</a>
+          </p>
+        </aside>
+      </div>
+      <div class="about__facts" data-reveal>
+        <div class="fact"><span class="fact__k">Degree</span><span class="fact__v">B.Tech CSE, 2023–2027</span></div>
+        <div class="fact"><span class="fact__k">CGPA</span><span class="fact__v">8.32 / 10</span></div>
+        <div class="fact"><span class="fact__k">Focus</span><span class="fact__v">AI/ML · Backend · Salesforce</span></div>
+        <div class="fact"><span class="fact__k">Languages</span><span class="fact__v">Python · Java · C/C++ · JS · SQL</span></div>
+        <div class="fact"><span class="fact__k">Certified</span><span class="fact__v">Oracle Java SE 17 Professional</span></div>
+        <div class="fact"><span class="fact__k">Gaming</span><span class="fact__v">451-game library · since 2010</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section--alt" id="experience">
+  <div class="container">
+    <p class="kicker" data-reveal>02 — Experience</p>
+    <h2 class="section__title" data-reveal>Where I've shipped real work</h2>
+
+    <div class="timeline">
+      <article class="timeline__item" data-reveal>
+        <div class="timeline__dot"></div>
+        <div class="timeline__head">
+          <div>
+            <h3>Salesforce Developer Intern</h3>
+            <p class="timeline__org">Salesforce Trailhead Virtual Internship · Remote</p>
+          </div>
+          <span class="chip chip--time">May 2025 – Jul 2025</span>
+        </div>
+        <ul class="bullets">
+          <li><strong>Reduced unauthorized data exposure</strong> across a CRM platform, as measured by <strong>zero unauthorized cross-object access</strong> in validation testing, by architecting role-based security models — profiles, permission sets, roles, sharing rules, and record-level access controls — across <strong>10+ custom objects</strong>.</li>
+          <li><strong>Reduced deployment risk</strong>, as measured by <strong>85%+ Apex test coverage</strong>, by writing <strong>500+ lines of Apex</strong> across triggers, classes, validation rules, and automation workflows to support core CRM operations.</li>
+          <li><strong>Investigated and resolved workflow failures</strong> across CRM automation, as measured by successful completion of <strong>Apex Specialist</strong> and <strong>Object Relationships Superbadge</strong> scenarios, by building reusable <strong>Lightning Web Components</strong> and automating order-processing, inventory-monitoring, and customer-loyalty workflows.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Apex</span><span class="tag">Lightning Web Components</span>
+          <span class="tag">Profiles &amp; Permission Sets</span><span class="tag">Sharing Rules</span>
+          <span class="tag">Validation Rules</span><span class="tag">CRM Automation</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <p class="kicker" data-reveal>03 — Projects</p>
+    <h2 class="section__title" data-reveal>Systems I've designed, built &amp; broken on purpose</h2>
+
+    <div class="projects">
+
+      <article class="project" data-reveal>
+        <div class="project__top">
+          <span class="project__index">01</span>
+          <h3 class="project__title">Real-Time Multi-Signal Classification System</h3>
+        </div>
+        <p class="project__stack">
+          <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>Random Forest</span><span>Streamlit</span>
+        </p>
+        <ul class="bullets">
+          <li>Trained and benchmarked multiple ML architectures, as measured by <strong>85%+ test-set classification accuracy across three distinct signal domains</strong>, by engineering domain-specific feature pipelines (FFT-based spectral analysis, statistical features) and comparing Random Forest against XGBoost across <strong>ECG, audio, and RF communication</strong> signal types.</li>
+          <li>Identified a <strong>silent statistical correctness bug</strong> in a deployed ML inference pipeline, as measured by pinpointing the exact line producing inconsistent predictions despite the app running without errors, by tracing a data scaler being incorrectly <strong>refit on single-sample inputs at prediction time</strong> instead of reusing the one fit during training — a defect invisible unless you inspect actual output correctness, not just whether the app runs.</li>
+        </ul>
+        <a class="project__link" href="https://github.com/Ynahammed/Multi-Signal-Classification-System" target="_blank" rel="noopener noreferrer">🔗 View on GitHub →</a>
+      </article>
+
+      <article class="project" data-reveal>
+        <div class="project__top">
+          <span class="project__index">02</span>
+          <h3 class="project__title">Intelligent Grammar Correction &amp; Writing Enhancement System</h3>
+        </div>
+        <p class="project__stack">
+          <span>Python</span><span>PyTorch</span><span>HuggingFace Transformers</span><span>spaCy</span><span>FastAPI</span><span>SQLAlchemy</span><span>React</span>
+        </p>
+        <ul class="bullets">
+          <li>Deployed <strong>five PyTorch-backed transformer models</strong> in a single inference pipeline, as measured by real-time inference latency across grammar correction, summarization, paraphrasing, and tone-analysis tasks, by integrating <strong>T5, BART, PEGASUS, and DistilBERT</strong> architectures with rule-based NLP logic for hybrid neural/symbolic processing.</li>
+          <li>Architected <strong>GPU-aware inference infrastructure</strong> across all five models, as measured by automatic <strong>CUDA/CPU device fallback</strong> and singleton-pattern model caching that eliminates reload overhead on every request, by implementing <code>torch.no_grad()</code> inference-mode optimization and dynamically-tuned beam-search configurations sized to each request's output requirements.</li>
+          <li>Found and fixed <strong>two production-blocking defects</strong> in a previously untested codebase, as measured by <strong>16 new regression tests</strong> added with zero prior coverage, by tracing a hardcoded authentication secret and a dependency version incompatibility silently breaking password hashing, then documenting root cause and reproduction steps for each before writing a fix.</li>
+        </ul>
+        <a class="project__link" href="https://github.com/Ynahammed/Intelligent-Grammar-Correction-and-Writing-Enhancement-System" target="_blank" rel="noopener noreferrer">🔗 View on GitHub →</a>
+      </article>
+
+      <article class="project" data-reveal>
+        <div class="project__top">
+          <span class="project__index">03</span>
+          <h3 class="project__title">Loan Performance Intelligence Engine</h3>
+        </div>
+        <p class="project__stack">
+          <span>Python</span><span>Scikit-learn</span><span>SHAP</span><span>RAG</span><span>SQL</span><span>Pandas</span><span>Streamlit</span>
+        </p>
+        <ul class="bullets">
+          <li>Trained and evaluated a multi-model ML pipeline, as measured by <strong>0.860 ROC-AUC and 19.0× lift on 12-month default prediction</strong>, cross-validated against an independent <strong>0.846 ROC-AUC transition model</strong>, by developing a rigorous evaluation methodology spanning calibration by vintage and credit band, SHAP-based explainability, and cross-validated survival modeling.</li>
+          <li>Built an automated evaluation and monitoring pipeline for model reliability, as measured by systematic train/test drift detection and <strong>176 passing automated tests</strong> validating pipeline correctness, by implementing metric tracking, data-quality validation, and root-cause investigation workflows across every stage of the ML pipeline.</li>
+          <li>Built an end-to-end data pipeline processing <strong>47,883 monthly records</strong>, as measured by those 176 tests systematically catching data-quality defects before they reached downstream reporting, by implementing validation rules and cross-source reconciliation to find and flag inconsistent, stale, or conflicting records between two independent data feeds.</li>
+          <li>Developed a <strong>governed LLM evaluation and guardrail system</strong>, as measured by full audit logging and output-guardrail validation of every generated response, by building a RAG-grounded review layer to systematically catch and flag LLM outputs that deviated from underlying model predictions.</li>
+        </ul>
+        <a class="project__link" href="https://github.com/Ynahammed/loan-performance-intelligence" target="_blank" rel="noopener noreferrer">🔗 View on GitHub →</a>
+      </article>
+
+      <article class="project" data-reveal>
+        <div class="project__top">
+          <span class="project__index">04</span>
+          <h3 class="project__title">AI Study Assistant</h3>
+        </div>
+        <p class="project__stack">
+          <span>Python</span><span>FastAPI</span><span>React</span><span>RAG</span><span>LangChain</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>ChromaDB</span>
+        </p>
+        <ul class="bullets">
+          <li>Built a <strong>Retrieval-Augmented Generation pipeline</strong> over API-based embeddings, as measured by end-to-end retrieval and context-aware response generation across arbitrary study documents, by implementing document parsing, chunking, and vector-embedding retrieval with <strong>ChromaDB and LangChain</strong>.</li>
+          <li>Designed and queried a <strong>6-table relational database</strong>, as measured by real-time dashboard analytics validated against hand-written SQL diagnostic queries, by building multi-table joins, filtered queries, and count/date aggregations to power <strong>per-user learning analytics</strong>.</li>
+        </ul>
+        <a class="project__link" href="https://github.com/Ynahammed/AI-STUDY-ASSISTANT" target="_blank" rel="noopener noreferrer">🔗 View on GitHub →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section--alt" id="skills">
+  <div class="container">
+    <p class="kicker" data-reveal>04 — Skills</p>
+    <h2 class="section__title" data-reveal>Full technical arsenal</h2>
+    <div class="skills">
+      <div class="skill-card" data-reveal>
+        <h3>💻 Languages</h3>
+        <ul><li>Python</li><li>C</li><li>C++</li><li>Java</li><li>JavaScript</li><li>SQL</li></ul>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>🧠 ML / Deep Learning</h3>
+        <ul><li>PyTorch</li><li>HuggingFace Transformers</li><li>Scikit-learn</li><li>XGBoost</li><li>Random Forest</li><li>CUDA-aware Inference</li><li>Model Training &amp; Evaluation</li></ul>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>🤖 AI / GenAI</h3>
+        <ul><li>LLMs</li><li>RAG</li><li>LangChain</li><li>Prompt Engineering</li><li>Embeddings</li><li>NLP</li><li>Feature Engineering</li></ul>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>📊 Evaluation &amp; Monitoring</h3>
+        <ul><li>Model Calibration</li><li>SHAP Explainability</li><li>Drift Detection</li><li>Automated Testing (pytest)</li><li>Test-Driven Development</li></ul>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>🔧 Backend / Databases</h3>
+        <ul><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>REST APIs</li><li>MongoDB</li><li>SQLite</li><li>PostgreSQL</li><li>SQLAlchemy</li></ul>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>🎨 Frontend / Salesforce</h3>
+        <ul><li>React</li><li>HTML</li><li>CSS</li><li>Apex</li><li>Lightning Web Components</li></ul>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>🧪 Testing &amp; QA</h3>
+        <ul><li>Test Case Design</li><li>Regression Testing</li><li>API Testing</li><li>Debugging</li><li>Root-Cause Analysis</li></ul>
+      </div>
+      <div class="skill-card" data-reveal>
+        <h3>⚙️ Tools</h3>
+        <ul><li>Streamlit</li><li>Git</li><li>GitHub</li><li>VS Code</li><li>Microsoft Office Suite</li><li>Cross-platform Troubleshooting</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAMING ============ -->
+<section class="section gaming" id="gaming">
+  <div class="gaming__scan" aria-hidden="true"></div>
+  <div class="container">
+    <p class="kicker kicker--gaming" data-reveal>05 — The Gaming Profile</p>
+    <h2 class="section__title" data-reveal>15+ years of <span class="grad-2">critical</span> play</h2>
+    <p class="gaming__intro" data-reveal>
+      Games aren't a side note — they're where I learned systems thinking, narrative structure, and
+      how to judge craft honestly. Gaming has been a constant part of my life since childhood: I've
+      played continuously since <strong>2010</strong>, worked through <strong>700+ games</strong>
+      across nearly every major genre, and built a <strong>451-game library</strong> on PS4/PS5
+      verified through PlayStation's own dashboard. I write structured, genre-aware critiques of
+      what I play.
+    </p>
+
+    <div class="gaming__stats" data-reveal>
+      <div class="gstat"><strong data-count="15" data-suffix="+">0</strong><span>Years playing<br />(since 2010)</span></div>
+      <div class="gstat"><strong data-count="700" data-suffix="+">0</strong><span>Games played<br />across genres</span></div>
+      <div class="gstat"><strong data-count="10" data-suffix="+">0</strong><span>Genres covered<br />deeply</span></div>
+      <div class="gstat"><strong data-count="100" data-suffix="+">0</strong><span>Hours in<br />Grand Theft Auto V</span></div>
+    </div>
+
+    <div class="gaming__grid">
+      <article class="gpanel gpanel--wide" data-reveal>
+        <h3>❤️ Favourite Games &amp; Genres</h3>
+        <p>
+          <strong>700+ games</strong> spanning nearly every major genre. That range matters: it means
+          I judge a game against the standards of <em>its own genre</em> rather than a single fixed
+          yardstick — the same discipline testers need when deciding whether a mechanic is working
+          as intended or actually broken.
+        </p>
+        <div class="tags tags--genre">
+          <span class="tag tag--genre">Action</span>
+          <span class="tag tag--genre">Action-Adventure</span>
+          <span class="tag tag--genre">Open-World</span>
+          <span class="tag tag--genre">RPG</span>
+          <span class="tag tag--genre">Shooter</span>
+          <span class="tag tag--genre">Survival Horror</span>
+          <span class="tag tag--genre">Stealth</span>
+          <span class="tag tag--genre">Racing</span>
+          <span class="tag tag--genre">Strategy</span>
+          <span class="tag tag--genre">Simulation</span>
+        </div>
+
+        <div class="favgrid favgrid--three">
+          <div class="favcol">
+            <h4>Personal favourites</h4>
+            <ul class="favlist">
+              <li>Silent Hill 2 (2001)</li>
+              <li>Shadow of the Colossus</li>
+              <li>Signalis</li>
+              <li>Cuphead</li>
+            </ul>
+            <p class="gpanel__note">
+              These tend to be games built around a very specific, deliberately controlled
+              experience — probably why I notice quickly when something in a game's atmosphere,
+              pacing, or presentation breaks that control.
+            </p>
+          </div>
+          <div class="favcol">
+            <h4>Formative &amp; lifelong</h4>
+            <ul class="favlist">
+              <li>Prince of Persia</li>
+              <li>Jak and Daxter</li>
+              <li>Ratchet &amp; Clank</li>
+              <li>Sly Cooper</li>
+              <li>GTA: San Andreas</li>
+              <li>GTA: Vice City</li>
+              <li>GTA IV</li>
+              <li>GTA V</li>
+              <li>Bully</li>
+              <li>Red Dead Redemption</li>
+            </ul>
+          </div>
+          <div class="favcol">
+            <h4>Across the catalogue</h4>
+            <ul class="favlist">
+              <li>God of War</li>
+              <li>The Witcher 3</li>
+              <li>Elden Ring</li>
+              <li>Metal Gear Solid</li>
+              <li>Resident Evil</li>
+              <li>Mafia</li>
+              <li>007 First Light</li>
+              <li>AC: Black Flag Resynced</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="gpanel" data-reveal>
+        <h3>📝 The Review Log</h3>
+        <p>
+          Maintains a running written review log covering <strong>10+ titles played in 2026 alone</strong>,
+          published as structured, genre-aware critiques.
+        </p>
+        <div class="handle">
+          <span class="handle__at">@</span><span class="handle__name">alrightstfunow</span>
+          <span class="handle__where">Instagram · Twitter</span>
+        </div>
+      </article>
+
+      <article class="gpanel" data-reveal>
+        <h3>⚖️ Non-Biased Evaluation</h3>
+        <p>
+          Delivers critical, non-biased evaluation rather than uniform praise — able to flag real
+          shortcomings in <strong>even the most acclaimed AAA franchises</strong>, by identifying
+          specific, defensible problems rather than reaching for easy hype.
+        </p>
+        <ul class="bullets bullets--tight">
+          <li><strong>Returnal</strong> — praised the atmosphere and combat depth, docked it for late-game enemy variety and difficulty-curve issues.</li>
+          <li><strong>Until Dawn (remake)</strong> — flagged a camera and movement overhaul that actively hurt playability versus the original.</li>
+          <li><strong>Saros</strong> — for stripping out Returnal's roguelike tension and final-biome enemy variety, despite tighter movement and combat.</li>
+        </ul>
+      </article>
+
+      <article class="gpanel gpanel--wide" data-reveal>
+        <h3>🎯 Rockstar Deep-Dive — GTA V vs Red Dead Redemption II</h3>
+        <p>
+          My knowledge of Rockstar's recent titles runs deep: <strong>100+ hours in Grand Theft
+          Auto V</strong> and <strong>70+ hours in Red Dead Redemption II</strong> (PSN ID:
+          <span class="mono">naveed_lmaoooo</span>). I put together a full side-by-side breakdown of
+          the two across gameplay, story, graphics, music, multiplayer, transportation, side
+          content, characters, and cultural impact.
+        </p>
+
+        <table class="vs">
+          <thead>
+            <tr><th>Category</th><th>GTA V</th><th>Red Dead Redemption II</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Gameplay</td><td class="vs__win">◆ edge</td><td></td></tr>
+            <tr><td>Story</td><td></td><td class="vs__win">◆ edge</td></tr>
+            <tr><td>Graphics</td><td></td><td class="vs__win">◆ edge</td></tr>
+            <tr><td>Music</td><td class="vs__dash">compared</td><td class="vs__dash">compared</td></tr>
+            <tr><td>Multiplayer</td><td class="vs__win">◆ edge</td><td></td></tr>
+            <tr><td>Transportation</td><td class="vs__win">◆ edge</td><td></td></tr>
+            <tr><td>Side Content &amp; Exploration</td><td></td><td class="vs__win">◆ edge</td></tr>
+            <tr><td>Characters</td><td></td><td class="vs__win">◆ edge</td></tr>
+            <tr><td>Cultural Impact</td><td class="vs__win">◆ edge</td><td></td></tr>
+          </tbody>
+        </table>
+
+        <div class="rkgrid">
+          <div class="rkcol">
+            <h4>What it taught me</h4>
+            <ul class="bullets bullets--tight">
+              <li><strong>Design intent vs. friction.</strong> GTA V's modern control scheme and vehicle variety make it faster and more accessible, while RDR2's slower, more deliberate systems — interacting with people, switching between actions — are a deliberate choice in service of immersion, not bugs. Recognizing that distinction is exactly the nuance a tester needs before flagging a design decision as a bug.</li>
+              <li><strong>Side content that makes a world feel alive.</strong> RDR2's serial killer mystery, cave drawings, UFO events, and random encounters reward exploration — side content can be evaluated for whether it makes the world feel alive, not just whether it's technically functional.</li>
+            </ul>
+          </div>
+          <div class="rkcol">
+            <h4>Two writing approaches</h4>
+            <ul class="bullets bullets--tight">
+              <li><strong>GTA V</strong> — Michael, Franklin, and Trevor succeed through a chaotic, comedic ensemble.</li>
+              <li><strong>RDR II</strong> — the Van der Linde gang succeeds through slow-building, emotional writing.</li>
+              <li>Useful context when testing narrative-heavy sequences or scripted events for tonal consistency.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="gpanel__note">
+          I scored the two honestly rather than defaulting to uniform praise — neither game benefits
+          from being rated as simply "better," and I don't think Rockstar's QA process does either.
+        </p>
+      </article>
+
+      <article class="gpanel gpanel--wide" data-reveal>
+        <h3>⭐ Standout Praise</h3>
+        <ul class="bullets bullets--tight">
+          <li><strong>007 First Light</strong> — a genre-redefining take on cinematic, story-driven action design.</li>
+          <li><strong>Assassin's Creed: Black Flag Resynced</strong> — its naval combat and open-world scale are among the best Ubisoft has ever built for an AAA title.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="psn" data-reveal>
+      <span class="psn__label">Live activity</span>
+      <span class="psn__id">PSN ID: <strong>naveed_lmaoooo</strong></span>
+      <span class="psn__dot"><i></i> currently playing</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COVER LETTER / QA ============ -->
+<section class="section section--alt qa" id="qa">
+  <div class="container">
+    <p class="kicker kicker--gaming" data-reveal>06 — Cover Letter</p>
+    <h2 class="section__title" data-reveal>Why I'm applying for <span class="grad-2">Game Tester</span> at Rockstar India</h2>
+
+    <article class="letter" data-reveal>
+      <div class="letter__head">
+        <p class="letter__to">Dear Hiring Team,</p>
+        <span class="chip chip--time">Game Tester · QA · Rockstar India</span>
+      </div>
+
+      <p class="letter__p">
+        I'm writing to apply for the <strong>Game Tester position with Rockstar India's QA team</strong>.
+        Gaming has been a constant part of my life since childhood, and Rockstar's catalog
+        specifically has shaped how I think about game design, so this role is one I've genuinely
+        been working toward.
+      </p>
+
+      <p class="letter__p">
+        Over the years I've played <strong>700+ games</strong> spanning nearly every major genre —
+        action, action-adventure, open-world, RPG, shooter, survival horror, stealth, racing,
+        strategy, and simulation, among others — including <em>God of War, The Witcher 3, Elden Ring,
+        Metal Gear Solid, Resident Evil,</em> and <em>Mafia</em>. That range matters for QA work: it
+        means I judge a game against the standards of its own genre rather than a single fixed
+        yardstick — the same discipline testers need when deciding whether a mechanic is working as
+        intended or actually broken.
+      </p>
+
+      <p class="letter__p">
+        My personal favorites — <strong>Silent Hill 2 (2001), Shadow of the Colossus, Signalis,</strong>
+        and <strong>Cuphead</strong> — tend to be games built around a very specific, deliberately
+        controlled experience, which is probably why I notice quickly when something in a game's
+        atmosphere, pacing, or presentation breaks that control.
+      </p>
+
+      <p class="letter__p">
+        My knowledge of Rockstar's recent titles specifically runs deep. I've logged
+        <strong>100+ hours in Grand Theft Auto V</strong> and <strong>70+ hours in Red Dead Redemption
+        II</strong> (PSN ID: <span class="mono">naveed_lmaoooo</span>), and I recently put together a
+        full side-by-side breakdown of the two games across gameplay, story, graphics, music,
+        multiplayer, transportation, side content, characters, and cultural impact. That comparison
+        showed me that GTA V's modern control scheme and vehicle variety make it faster and more
+        accessible, while RDR2's slower, more deliberate systems, like interacting with people or
+        switching between actions, are a deliberate design choice in service of immersion rather
+        than friction — and recognizing that distinction is exactly the kind of nuance a tester needs
+        before flagging a design decision as a bug.
+      </p>
+
+      <p class="letter__p">
+        It also showed me how RDR2's world rewards exploration — the serial killer mystery, cave
+        drawings, UFO events, and random encounters — which highlights how side content can be
+        evaluated for whether it makes the world feel alive, not just whether it's technically
+        functional. And it showed how GTA V's ensemble of Michael, Franklin, and Trevor and RDR2's
+        Van der Linde gang succeed through completely different writing approaches: one chaotic and
+        comedic, one slow-building and emotional. That's useful context when testing narrative-heavy
+        sequences or scripted events for tonal consistency.
+      </p>
+
+      <p class="letter__p">
+        I scored the two games against each other honestly rather than defaulting to uniform praise:
+        GTA V takes the edge on <strong>gameplay, multiplayer, transportation, and cultural reach</strong>,
+        while RDR2 takes it on <strong>story, characters, graphics, and exploration</strong>. I don't
+        think either game benefits from being rated as simply "better," and I don't think Rockstar's
+        QA process does either. That's the same critical, category-by-category approach I'd bring to
+        testing.
+      </p>
+
+      <p class="letter__p">
+        I'd welcome the chance to bring that same close, critical attention to Rockstar's next
+        release. Thank you for your time and consideration.
+      </p>
+
+      <p class="letter__sign">— Yadiki Naveed Ahammed</p>
+    </article>
+
+    <div class="qa__cta" data-reveal>
+      <a class="btn btn--primary" href="mailto:naveed12092005@gmail.com?subject=Game%20Tester%20Application%20—%20Yadiki%20Naveed%20Ahammed">✉ Apply — email me</a>
+      <a class="btn btn--ghost" href="#gaming">🎮 See the gaming profile</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section class="section" id="credentials">
+  <div class="container">
+    <p class="kicker" data-reveal>07 — Credentials</p>
+    <h2 class="section__title" data-reveal>Certifications, achievements &amp; education</h2>
+
+    <div class="creds">
+      <div class="creds__col" data-reveal>
+        <h3 class="creds__h">📜 Certifications</h3>
+        <div class="cert">
+          <h4>Oracle Certified Professional: Java SE 17 Developer</h4>
+          <p>Oracle <span class="chip chip--time">March 2026</span></p>
+        </div>
+        <div class="cert">
+          <h4>Data Structures in C</h4>
+          <p>Coursera — University of Michigan <span class="chip chip--time">January 2024</span> <span class="chip chip--grade">Grade: 100%</span></p>
+        </div>
+        <div class="cert">
+          <h4>Salesforce Developer with Agentblazer Champion Program</h4>
+          <p>SmartBridge / Salesforce / AICTE <span class="chip chip--time">July 2025</span></p>
+        </div>
+
+        <h3 class="creds__h creds__h--sp">🏅 Achievements</h3>
+        <ul class="bullets bullets--tight">
+          <li><strong>Agentblazer Champion</strong> — top 10%.</li>
+          <li><strong>Apex Specialist</strong> &amp; <strong>Object Relationships</strong> Superbadges, Salesforce Trailhead.</li>
+        </ul>
+      </div>
+
+      <div class="creds__col" data-reveal>
+        <h3 class="creds__h">🎓 Education</h3>
+        <div class="edu">
+          <div class="edu__head">
+            <h4>B.Tech. in Computer Science and Engineering</h4>
+            <span class="chip chip--time">2023 – 2027</span>
+          </div>
+          <p>SRM University AP · Amaravati, Andhra Pradesh</p>
+          <p class="edu__grade">CGPA: <strong>8.32 / 10</strong></p>
+        </div>
+        <div class="edu">
+          <div class="edu__head">
+            <h4>Higher Secondary Education, PCM</h4>
+            <span class="chip chip--time">2021 – 2023</span>
+          </div>
+          <p>Sri Chaitanya Junior College · Guntur, Andhra Pradesh</p>
+          <p class="edu__grade">Score: <strong>89%</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--cta" id="contact">
+  <div class="container contact">
+    <div data-reveal>
+      <p class="kicker">08 — Contact</p>
+      <h2 class="section__title">Let's build something worth criticising.</h2>
+      <p class="contact__lead">
+        I'm seeking a <strong>Software Engineer</strong> role where I can bring full-stack
+        development, AI/ML engineering, agile collaboration, and relentless problem-solving. I'd
+        welcome the chance to discuss how my background can benefit your team.
+      </p>
+      <div class="contact__actions">
+        <a class="btn btn--primary" href="mailto:naveed12092005@gmail.com">✉ Email me</a>
+        <a class="btn btn--ghost" href="tel:+918074389232">☎ +91-80743-89232</a>
+      </div>
+      <ul class="contact__list">
+        <li><span>Primary email</span><a href="mailto:naveed12092005@gmail.com">naveed12092005@gmail.com</a></li>
+        <li><span>University email</span><a href="mailto:Naveedahammed_yadik@srmap.edu.in">Naveedahammed_yadik@srmap.edu.in</a></li>
+        <li><span>Location</span><strong>Kadapa, Andhra Pradesh, India</strong></li>
+        <li><span>GitHub</span><a href="https://github.com/Ynahammed" target="_blank" rel="noopener noreferrer">github.com/Ynahammed</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© <span id="year"></span> Yadiki Naveed Ahammed</p>
+    <p class="footer__note">Built with HTML, CSS &amp; JavaScript — and far too many hours on the couch.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
